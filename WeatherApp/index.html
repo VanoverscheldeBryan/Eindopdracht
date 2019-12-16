@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="img/cropped-favicon.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <script src="script/data.js"></script>
+    <title>Weer</title>
+  </head>
+
+  <body>
+    <div class="centering">
+      <div class="c-container o-layout o-layout--row-reverse o-layout--align-center">
+        <div class="c-992 o-layout__item u-1-of-2-bp3">
+          <p class="timezonedef">current timezone:</p>
+          <header class="location">
+            <div class="c-title">
+              <h1 id="timezone">Europe/Brussels</h1>
+            </div>
+          </header>
+          <div class="image">
+            <p><img class="imagesize" src="" id="icon" /></p>
+          </div>
+        </div>
+
+        <div class="maincontainer o-layout__item2 u-1-of-2-bp3">
+          <div class="thecard" id="myBtn">
+            <div class="thefront">
+              <div class="temperature-description" id="condition">Cloudy</div>
+
+              <div>
+                <h3 id="place" class="place">Wielsbeke</h3>
+              </div>
+
+              <div class="temperature">
+                <div class="degree-section">
+                  <h2 class="temperature-degree" id="temperature">25</h2>
+                </div>
+              </div>
+              <div class="c-date">
+                <p id="date">2019-12-04</p>
+              </div>
+            </div>
+            <div class="theback">
+              <div>
+                <h2 class="sunriseText">Sunrise at</h2>
+                <p class="sunrise" id="sunrise"></p>
+              </div>
+              <h2 class="sunsetText">Sunset at</h2>
+              <div><p class="sunsets" id="sunset"></p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

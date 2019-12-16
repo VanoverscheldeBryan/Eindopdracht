@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>LandingsPage</title>
+    <meta name="description" content="This is my HTML5 boilerplate." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="msapplication-TileColor" content="#30c2ff" />
+    <meta name="theme-color" content="#0c0d0c" />
+    <link rel="icon" href="img/cropped-favicon.png" />
+
+    <link rel="manifest" href="site.webmanifest" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+  </head>
+  <script src="./script/app.js"></script>
+
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date('Jan 1, 2020 00:00:00').getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="demo"
+      document.getElementById('demo').innerHTML = days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's ';
+    }, 1000);
+  </script>
+
+  <body>
+    <div class="wrapper ">
+      <section class="o-row2 o-row--lg ">
+        <div class="o-container">
+          <div class="o-layout o-layout--align-center o-layout--row-reverse">
+            <div class="o-layout__item2 u-1-of-2-bp3 u-3-of-5-bp4">
+              <figure>
+                <picture>
+                  <img src="img/MockupDonezo.png" alt="Hero Animation" />
+                </picture>
+              </figure>
+            </div>
+            <div class="o-layout__item u-1-of-2-bp3 u-2-of-5-bp4">
+              <h1 class="c-lead c-lead--lg c-lead-color ">
+                WeatherApp
+              </h1>
+
+              <div class="o-layout__item">
+                <p class="c-lead c-lead-color c-lead--sm">
+                  Check what temperature it is at your location, and many more!
+                </p>
+              </div>
+              <div class="o-layout__item">
+                <p class="c-lead c-lead-color2 c-lead--sm3">
+                  WeatherApp can give users a quick look at the temperature of the day at your exact location and also gives you some extra information about the day!
+                </p>
+              </div>
+              <div class="o-layout__item">
+                <p class="c-lead c-lead-color c-lead--sm3">The app launches in exactly</p>
+              </div>
+              <div class="o-layout__item">
+                <p class="c-lead c-lead-color c-lead-sm" id="demo"></p>
+              </div>
+
+              <div class="o-layout__item">
+                <input class="c-input " type="email" name="username" placeholder="e.g. john@doe.com" required />
+              </div>
+              <div class="o-layout__item">
+                <p>
+                  <a class=" c-link-cta" href="#!">
+                    Sign up for beta
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
